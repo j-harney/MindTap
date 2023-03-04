@@ -1,0 +1,237 @@
+/*  
+Author: Jack Harney
+File Name: styles.css
+Date: 2/13/2023
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #baa98b;
+}
+
+img {
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  padding: 1%;
+  border: solid 5px black;
+}
+
+/* Style rules for mobile viewport */
+
+.mobile {
+  display: block;
+}
+
+/* Style rules to show mobile class and hide tab-desk class */
+
+.tab-desk {
+  display: none;
+}
+/* Style rules for header area */
+h1 {
+  text-align: center;
+  margin: 2%;
+}
+
+h3 {
+  text-align: center;
+  margin: 2%;
+}
+
+/* Style rules for navigation area */
+
+nav {
+  background: linear-gradient(90deg, rgba(108,103,94,1) 2%, rgba(186,169,139,1) 50%, rgba(108,103,94,1) 97%);
+  border: 2px solid black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  border-top: 2px solid black;
+  font-size: 1.0em;
+  font-family: 'Gabriela', serif;
+  font-weight: bold;;
+  }
+
+nav li a {
+  display: block;
+  color: black;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+
+nav li:first-child {
+  border-top: 0px;
+}
+
+/* Style rules for main content */
+
+main {
+  padding: 2%;
+  font-family: Gabriola, "Times New Roman", sans-serif;
+}
+
+main p {
+  font-size: 1.45em;
+  font-weight: bold;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+/* Style rules for class and id selectors */
+#skills {
+  text-align: center;
+}
+
+#skills dt {
+  font-size: 1.35em;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 0.5em;
+  margin: 2.5%;
+  font-family: 'Gabriela', serif;
+  text-decoration: #6c675e underline;
+}
+
+#skills dd {
+  font-size: 1.35em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  margin: 2.5%;
+}
+
+#contact {
+  text-align: center;
+}
+
+.map {
+  max-width: 85%;
+  max-height: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  border: black solid 5px;
+}
+ 
+.tel-link {
+  background-color: #6c675e;
+  padding: 1%;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  color: #f2f2f2;
+}
+
+.round {
+  border-radius: 10px;
+}
+
+/* Style rules for footer content */
+
+footer {
+  text-align: center;
+  font-size: 0.90em;
+  font-family: Gabriola, "Times New Roman", sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgba(108,103,94,1) 2%, rgba(186,169,139,1) 50%, rgba(108,103,94,1) 97%);
+  color: black;
+  border: black solid 2px;
+  border-radius: 5px;
+  font-family: 'Gabriela', serif;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width:620px), print {
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk {
+    display: block
+  }
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+  /* Tablet Viewport: Style rules for main area */
+  main {
+    font-size:1.35em;
+  }
+  /* Tablet Viewport: Style rules for classes */
+  #skills {
+    text-align:left;
+  }
+  .map {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width:1000px), print {
+  /* Desktop Viewport Style rules for nav area */
+  nav li {
+    font-size: 1.5em;
+  }
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+  nav li a:hover {
+    color: white;
+    background-color: #baa98b;
+  }
+  /* Desktop Viewport: Style rules for main content */
+  #info ul {
+    margin-left: 5%;
+  }
+  /* Tablet Viewport: Style rules for classes */
+  .map {
+    width: 500px;
+    height: 400px;
+  }
+}
