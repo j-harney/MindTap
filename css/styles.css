@@ -5,13 +5,13 @@ Date: 2/13/2023
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul, article, section, aside, figure, figcaption {
+body, header, nav, main, footer, img, h1, h3, ul, article, section, aside, figure, figcaption, audio, table {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* Style rules for body and images */
+/* Style rules for body, images, and audio */
 body {
   background-color: #baa98b;
 }
@@ -23,6 +23,13 @@ img {
   margin-top: 2%
 }
 
+#audio {
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 /* Style rules for mobile viewport */
 
 .mobile {
@@ -31,7 +38,7 @@ img {
 
 /* Style rules to show mobile class and hide tab-desk class */
 
-.tab-desk {
+.tab-desk, #table {
   display: none;
 }
 /* Style rules for header area */
@@ -111,8 +118,76 @@ section {
   margin-top: 4%;
   padding: 4%;
   background-color: #c6b89f;
+  
+}
+/* Style rules for table elements */
+table {
+    border: 1px solid #6c675e;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+ 
+caption {
+    font-size: 1.5em;
+    font-weight: bold; 
+    padding: 1%;
+}
+ 
+th, td {
+    border: 2px solid black;
+    padding: 2%; 
+}
+ 
+th {
+    background-color: #6c675e;
+    color: #fff;
+    font-size: 1.15em;
 }
 
+td:not(:last-child), th:not(:last-child) {
+  width: 28%;
+  text-align: center;
+}
+ 
+tr:nth-child(odd) {
+    background-color: #c6b89f;  
+}
+
+/* Style rules for form elements */
+fieldset, input, textarea {
+  margin-bottom: 2%;
+  font-size: 1.15em;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-decoration: #6c675e underline;
+}
+
+#textareaquestions {
+  font-size: 1.20em;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit {
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 3%;
+  background-color: #6c675e;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+}
 /* Style rules for class and id selectors */
 
 #contact {
@@ -180,7 +255,7 @@ footer a {
 /* Media Query for Tablet Viewport */
 @media screen and (min-width:620px), print {
   /* Tablet Viewport: Show tab-desk class, hide mobile class */
-  .tab-desk {
+  .tab-desk, #table {
     display: block
   }
   .mobile {
