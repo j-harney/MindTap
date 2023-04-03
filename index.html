@@ -15,25 +15,37 @@ Date: 2/5/2023
   <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+    <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="list.html">Skills and Examples</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="resume.html">Resume</a>
+    </div>
+        <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
 <header>
   
   <figure>
     <img class="tab-desk" src=images/jackharney.jpg  alt="Picture of Jack Harney">
     <figcaption class="shadow">
-      <h1>Jack Harney</h1>
-      <h3>Improve now for the sake of tomorrow</h3>
+      <h3>Jack Harney</h3>
+      <h4>Improve now for the sake of tomorrow</h4>
     </figcaption>
   </figure>
 
 </header>
 
-<nav>
+<nav class="round tab-desk">
 
   <ul class="round">
     <li><a href="index.html">Home</a></li>
     <li><a href="list.html">Skills and Examples</a></li> 
     <li><a href="contact.html">Contact Me</a></li>
+    <li><a href="resume.html">Resume</a></li>
   </ul>
 
 </nav>
@@ -41,7 +53,7 @@ Date: 2/5/2023
 <!-- Use the main area to add the main content of the webpage -->
 <main>
   
-  <h1>Introduction</h1>
+  <h1 class="tab-desk">Introduction</h1>
     <div id="audio">
       <audio controls>
         <source src=media/Intro.mp3 type=audio/mp3>
@@ -70,7 +82,7 @@ Date: 2/5/2023
 <footer>
   <p>You can contact me at: <a href="mailto:jpharney2022@gmail.com">jpharney2022@gmail.com</a></p>
 </footer>
-
+ <script src="scripts/script.js"></script>
 </body>
 
 </html>
