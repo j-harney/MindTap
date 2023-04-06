@@ -23,6 +23,15 @@ img {
   margin-top: 2%
 }
 
+.copyright img {
+  max-width: 50px;
+  max-height: 50px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2%;
+}
+
 #audio {
   margin-left: auto;
   margin-right: auto;
