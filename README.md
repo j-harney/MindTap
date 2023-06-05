@@ -1,1 +1,1 @@
-## This is for my MindTap HTML class, shows HTML and CSS work, along with JavaScript in the future.
+## This was for my MindTap Web Design Class. I designed three websites, with one being my own personal portfolio that could use some touching up. Each include HTML, CSS, and JavaScript.
